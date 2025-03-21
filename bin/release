@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+poetry run python -m build
+poetry run python -m twine upload dist/*

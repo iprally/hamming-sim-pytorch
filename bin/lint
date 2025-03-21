@@ -1,0 +1,25 @@
+#!/bin/bash
+set -e
+
+CHECK=false
+
+while [ $# -gt 0 ]; do
+    case $1 in
+        --check)
+            CHECK=true
+            shift
+            ;;
+        *)
+            echo "Unknown option: $1"
+            exit 1
+            ;;
+    esac
+done
+
+if [ "$CHECK" = true ]; then
+    poetry run ruff check
+    poetry run ruff format --check
+else
+    poetry run ruff check --fix
+    poetry run ruff format
+fi
