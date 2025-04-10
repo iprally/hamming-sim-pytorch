@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hamming-sim-pytorch"
 version = "0.1.2"
-description = "This package contains code for hamming similarity optimized for cpu."
+description = "A PyTorch extension for hamming similarity optimized for CPU usage."
 authors = [
     "Yashasvi Ranawat <yashasvi.ranawat@iprally.com>",
 ]
@@ -20,6 +20,7 @@ include = [
 [tool.poetry.dependencies]
 python = "^3.9"
 torch = "1.13.1"
+# Used internally by torch and needs to be explicitly installed.
 numpy = "~1.22"
 
 [tool.poetry.group.dev.dependencies]
