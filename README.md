@@ -3,8 +3,8 @@
 `hamming-sim-pytorch` is a library that provides hamming similarity implementation
 optimized for CPUs using PyTorch.
 
-The binary wheel currently supports Intel Haswell CPUs and PyTorch 1.13. Use the
-source distribution to build a binary wheel for different architectures.
+The binary wheel currently supports Intel Haswell CPUs and PyTorch 1.13.1 and 2.4.0.
+Use the source distribution to build a binary wheel for different architectures.
 
 ## Installation
 
